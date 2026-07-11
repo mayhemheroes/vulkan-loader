@@ -1,0 +1,9 @@
+project: vulkan-loader
+target: json_load_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/json_load_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/json_load_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/json_load_fuzzer.dict

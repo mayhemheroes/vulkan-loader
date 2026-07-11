@@ -1,0 +1,9 @@
+project: vulkan-loader
+target: instance_enumerate_fuzzer_split_input
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/instance_enumerate_fuzzer_split_input/testsuite
+cmds:
+  - cmd: /mayhem/instance_enumerate_fuzzer_split_input
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/vulkan_instance.dict

@@ -1,0 +1,9 @@
+project: vulkan-loader
+target: instance_create_advanced_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/instance_create_advanced_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/instance_create_advanced_fuzzer
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/vulkan_instance.dict

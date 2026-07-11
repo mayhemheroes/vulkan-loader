@@ -1,0 +1,28 @@
+{
+    "file_format_version": "1.0.0",
+    "settings": {
+        "app_keys": [],
+        "layers": [
+            {
+                "name": "VK_LAYER_KHRONOS_validation",
+                "path": "libVkLayer_khronos_validation.so",
+                "control": "auto",
+                "treat_as_implicit_manifest": false
+            }
+        ],
+        "stderr_log": [
+            "error",
+            "warn"
+        ],
+        "log_locations": [
+            {
+                "destinations": [
+                    "stdout"
+                ],
+                "filters": [
+                    "error"
+                ]
+            }
+        ]
+    }
+}
